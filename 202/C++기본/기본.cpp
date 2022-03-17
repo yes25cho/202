@@ -4,7 +4,7 @@
 int main(void) 
 {
 	//printf¸¦ cout °´Ã¼·Î
-	std::cout << "¾È³ç ¼¼»ó¾Æ\n";
+	std::cout << "¾È³ç ¼¼»ó¾Æ \n";
 
 	return 0;
 }
