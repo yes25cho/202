@@ -15,8 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C기본\03 switch.c">
+    <ClCompile Include="C기본\04 함수의정의.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="C기본\04.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C기본\04.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
