@@ -18,5 +18,8 @@
     <ClCompile Include="C++기본\기본.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="C기본\07 포인터기본.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
