@@ -13,14 +13,14 @@ int main(void)
 	jum.x = 5.0f;
 	jum.y = 10.0f;
 	//Call By Value로 jum의 x,y값이 바뀌진 않음
-	AddValueToPoint(jum);
+	AddValueToPoint(&jum);
 	printf(" % .1f, % .1f\n", jum.x, jum.y);
 
 	return 0;
 
 }
 
-void AddValueToPoint(Jum j) {
-	j.x += 10.0f;
-	j.y += 10.0f;
+void AddValueToPoint(Jum* j) {
+	j->x += 10.0f;
+	j->y += 10.0f;
 }
