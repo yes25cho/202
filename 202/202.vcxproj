@@ -22,7 +22,7 @@
     <ClCompile Include="C++기본\기본.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="C기본\09 포인터기본.c" />
+    <ClCompile Include="C기본\10 구조체 CallBy포인터.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
