@@ -1,4 +1,6 @@
 ﻿#include <stdio.h>
+//10 구조체 CallBy포인터==12 구조체 CallBy포인터
+//파일 이름 잘못씀
 
 typedef struct {
 	float x;
