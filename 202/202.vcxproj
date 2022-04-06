@@ -22,7 +22,7 @@
     <ClCompile Include="ArrayTest.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="C++기본\02-03 참조.cpp">
+    <ClCompile Include="C++기본\02-04 Call by 레퍼런스.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="C기본\static 지역변수.cpp">
