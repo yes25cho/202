@@ -8,8 +8,6 @@
 //std::  안써도 된다,.
 using namespace std;
 
-
-
 int main(void) 
 {	
 	char cMunja[20];
