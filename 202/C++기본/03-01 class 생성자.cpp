@@ -21,13 +21,13 @@ int main(void) {
 	stu2.show();
 }
 Student::Student(int Hakbun, string name) {
-	nHakbun = Hakbun;
-	sName = name;
+	this->nHakbun = Hakbun;
+	this->sName = name;
 	cout << "학번이 등록 되었습니다." << endl;
 }
 Student::Student(void) {
-	nHakbun = 1234;
-	sName = "이사랑";
+	this->nHakbun = 1234;
+	this->sName = "이사랑";
 	cout << "학번이 등록 되었습니다." << endl;
 }
 void Student::show(void) {
