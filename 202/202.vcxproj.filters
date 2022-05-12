@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C++기본\03-01 class 생성자.cpp">
+    <ClCompile Include="C++기본\03-02 동적 할당.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="C기본\static 지역변수.cpp">
