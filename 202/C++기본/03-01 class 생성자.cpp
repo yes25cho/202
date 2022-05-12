@@ -15,12 +15,14 @@ public:
 };
 
 int main(void) {
-	Student* stu1 = new Student;
-	stu1->show();
-	Student* stu2 =new Student(1111, "JWP");
-	stu2->show();
-	delete stu1;
-	delete stu2;
+	Student* stu = new Student[6];
+	int i;
+	for (i = 0; i < 6; i++) {
+		stu[i].show();
+	}
+
+	delete [] stu;
+	return 0;
 }
 //Student::Student(int Hakbun, string name) {
 //	this->nHakbun = Hakbun;
