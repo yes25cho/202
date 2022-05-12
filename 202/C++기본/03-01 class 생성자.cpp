@@ -15,15 +15,12 @@ public:
 };
 
 int main(void) {
-	Student* stu = new Student[6];
-	int i;
-	for (i = 0; i < 6; i++) {
-		//배열이므로 ->를 쓰지 않고, .으로 멤버 접근
-		stu[i].show();
-	}
-
-	delete [] stu;
-	return 0;
+	Student* stu1 = new Student;
+	stu1->show();
+	Student* stu2 =new Student(1111, "JWP");
+	stu2->show();
+	delete stu1;
+	delete stu2;
 }
 //Student::Student(int Hakbun, string name) {
 //	this->nHakbun = Hakbun;
