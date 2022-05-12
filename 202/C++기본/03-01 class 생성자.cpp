@@ -15,16 +15,18 @@ public:
 };
 
 int main(void) {
-	Student stu1;
-	stu1.show();
-	Student stu2 = Student(1111, "JWP");
-	stu2.show();
+	Student* stu1 = new Student;
+	stu1->show();
+	Student* stu2 =new Student(1111, "JWP");
+	stu2->show();
+	delete stu1;
+	delete stu2;
 }
-Student::Student(int Hakbun, string name) {
-	this->nHakbun = Hakbun;
-	this->sName = name;
-	cout << "학번이 등록 되었습니다." << endl;
-}
+//Student::Student(int Hakbun, string name) {
+//	this->nHakbun = Hakbun;
+//	this->sName = name;
+//	cout << "학번이 등록 되었습니다." << endl;
+//}
 Student::Student(int Hakbun, string name)
 //객체 생성과 동시에 맴버변수 초기화	//멤버 변수(매개변수)
 //const/참조형 멤버변수를 사용할 수 있다.
