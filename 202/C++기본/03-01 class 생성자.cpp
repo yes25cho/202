@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 class Student {
 //private:
 public:
@@ -11,13 +12,20 @@ public:
 	//string sName;
 	char* sName;
 	Student(int Hakbun, const char* name);
+	Student(const Student& rhs); //선언 
 	~Student();
 	void show(void);
 };
 
 int main(void) {
+	// 일반 생성자 호출
 	Student stu1 =  Student(1111, "JWP");
+	
+	// 복사 생성자 호출
+	Student stu2 = stu1;
+	// Student stu2 = Student(stu2);
 	stu1.show();
+	stu2.show();
 
 	return 0;
 }
@@ -27,10 +35,15 @@ int main(void) {
 //	cout << "학번이 등록 되었습니다." << endl;
 //}
 
+Student::Student(const Student& rhs) 
+	:nHakbun(rhs.nHakbun), sName(rhs.sName)
+{
+	cout << "복사생성자 호출" << endl;
+}
 
 
 Student::Student(int Hakbun, const char* name)
-//객체 생성과 동시에 맴버변수 초기화	//멤버 변수(매개변수)
+//객체 생성과 동시에 맴버변수 초기화	//멤버 변수(매개변수) 
 //const/참조형 멤버변수를 사용할 수 있다.
 	:nHakbun(Hakbun)
 {
