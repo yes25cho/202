@@ -41,7 +41,7 @@ Student::Student(int Hakbun, const char* name)
 }
 
 Student::~Student() {
-	delete[]sName;
+	delete []sName;
 	cout << "¼Ò¸êÀÚ È£Ãâ" << endl;
 }
 
