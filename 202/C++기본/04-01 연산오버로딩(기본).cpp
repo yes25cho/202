@@ -42,5 +42,5 @@ Point::Point(int X, int Y)
 {
 }
 void Point::print() {
-	cout << mX << ", " << mY << endl;
+	cout<<"(" << mX << ", " << mY << ")" << endl;
 }
