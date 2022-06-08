@@ -27,7 +27,7 @@
     <ClCompile Include="text.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="C++기본\04-01 연산오버로딩%28기본%29.cpp">
+    <ClCompile Include="C++기본\04-02 대입연산오버로딩.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="소스1.cpp">
@@ -42,10 +42,5 @@
     <ClCompile Include="test2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="04-01.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
