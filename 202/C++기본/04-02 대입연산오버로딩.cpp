@@ -17,22 +17,9 @@ public:
 
 	// 소멸자 : 객체가 메모리에서 해제될 때, 호출되는 함수
 	~Student();
-	Student& operator-(const Student& rhs) {
-		cout << "대입연산자 호출" << endl;
-
-		//기존에 존재 하는 공간을 제고하고 새공간 항당 준비
-		delete []sName;
-
-		nHakbun = rhs.nHakbun;
-		int len = strlen(rhs.sName) + 1;		// 공간개수 측정
-		sName = new char[len];			// 공간생성
-		strcpy(sName, rhs.sName);
-		return *this;
-	}
+	Student& operator=(const Student& rhs);
 
 	void show(void);
-
-	
 };
 
 
@@ -48,7 +35,7 @@ int main(void)
 	Student stu2 = stu1;
 	stu2.show();
 
-	stu1 = stu3;
+	stu1.operator= (stu3);
 	stu1.show();
 
 	return 0;
@@ -89,4 +76,17 @@ void Student::show(void)
 {
 	cout << "학번은 " << nHakbun << "입니다." << endl;
 	cout << "이름은 " << sName << "입니다." << endl << endl;
+}
+
+Student& Student::operator=(const Student& rhs) {
+	cout << "대입연산자 호출" << endl;
+
+	//기존에 존재 하는 공간을 제고하고 새공간 항당 준비
+	delete[]sName;
+
+	nHakbun = rhs.nHakbun;
+	int len = strlen(rhs.sName) + 1;		// 공간개수 측정
+	sName = new char[len];			// 공간생성
+	strcpy(sName, rhs.sName);
+	return *this;
 }
