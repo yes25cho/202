@@ -23,21 +23,28 @@ public:
 };
 
 
+class HighSchoolStudent : public Student 
+{
+public:
+	//생성자
+	HighSchoolStudent(int Hakbun, const char* Name, string Hakgwa)
+		: Student(Hakbun, Name), sHakgwa(Hakgwa) 
+	{
+		cout << "HighSchoolStudent 일반 생성자 호출" << endl;
+	}
+
+	//소멸자
+	~HighSchoolStudent(){
+		cout << "HighSchoolStudent 소멸자 호출" << endl;
+	}
+private:
+	string sHakgwa;
+};
+
 int main(void)
 {
-	// 일반생성자 호출
-	Student stu1 = Student(1111, "JWP");
-
-	// 복사생성자 호출
-	Student stu3 = Student(2222, "JYP");
-	stu1.show();
-
-	Student stu2 = stu1;
-	stu2.show();
-
-	stu1.operator= (stu3);
-	stu1.show();
-
+	HighSchoolStudent hss = HighSchoolStudent(1111, "JWP", "soft");
+	hss.show();
 	return 0;
 }
 
@@ -55,7 +62,7 @@ Student::Student(int Hakbun, const char* Name)
 	sName = new char[len];			// 공간생성
 
 	strcpy(sName, Name);
-	cout << "일반생성자 호출" << endl;
+	cout << "Student일반생성자 호출" << endl;
 }
 
 Student::Student(const Student& rhs)
@@ -63,13 +70,13 @@ Student::Student(const Student& rhs)
 {
 	sName = new char[strlen(rhs.sName) + 1];
 	strcpy(this->sName, rhs.sName);
-	cout << "복사생성자 호출" << endl;
+	cout << "Student복사생성자 호출" << endl;
 }
 
 Student::~Student()
 {
-	delete[]sName;
-	cout << "소멸자 호출" << endl;
+	delete[] sName;
+	cout << "Student소멸자 호출" << endl;
 }
 
 void Student::show(void)
