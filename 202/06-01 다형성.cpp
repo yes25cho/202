@@ -8,7 +8,7 @@ public:
 	Animal() {
 		cout <<"Animal 积己"<< endl;
 	}
-	~Animal() {
+	virtual ~Animal() {
 		cout << "Animal 家戈" << endl;
 	}
 	void eat(void) { cout << "悼拱 冈绢" << endl; }
@@ -26,7 +26,7 @@ public:
 	Tiger() {
 		cout << "Tiger 积己" << endl;
 	}
-	~Tiger() {
+	virtual ~Tiger() {
 		cout << "Tiger 家戈" << endl;
 	}
 	void roar(void) override { cout << "绢蕊" << endl; }
@@ -38,7 +38,7 @@ public:
 	Dog() {
 		cout << "Dog 积己" << endl;
 	}
-	~Dog() {
+	virtual ~Dog() {
 		cout << "Dog 家戈" << endl;
 	}
 	void roar(void) override { cout << "港港" << endl; }
