@@ -17,6 +17,7 @@ private:
 class Tiger : public Animal {
 public:
 	void roar(void) { cout << "¾îÈï" << endl; }
+	
 };
 
 class Dog : public Animal {
@@ -26,9 +27,15 @@ public:
 
 void main(void)
 {
-	Animal animal;
-	animal.roar();
+	Animal* animal = new Animal();
+	animal->roar();
+	delete animal;
 
-	Dog dog;
-	dog.roar();
+	Tiger* tiger = new Tiger;
+	tiger->roar();
+	delete tiger;
+
+	Dog* dog = new Dog();
+	dog->roar();
+
 }
